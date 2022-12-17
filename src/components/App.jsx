@@ -34,10 +34,7 @@ export const App = () => {
     );
   };
   const onFilterChange = data => {
-    setFilter(prevState => ({
-      ...prevState,
-      filter: data.toLowerCase(),
-    }));
+    setFilter(data.toLowerCase());
   };
   const handleContactDelete = event => {
     const idToDelete = event.currentTarget.id;
